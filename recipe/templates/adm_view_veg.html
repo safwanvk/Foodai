@@ -1,0 +1,28 @@
+{% extends "lkindex.html" %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/back_btn">
+  <table class="table ">
+    <tr>
+      <th width="93" align="center">  ID</th>
+      <th width="131" align="center">NAME</th>
+      <th width="161" align="center">DESCRIPTION</th>
+      <th width="102">&nbsp;</th>
+      <th width="79">&nbsp;</th>
+      <th width="83">&nbsp;</th>
+    </tr>
+      {% for i in data %}
+    <tr>
+      <td>{{ i[0] }}</td>
+      <td>{{ i[1] }}</td>
+      <td>{{ i[2] }}&nbsp;</td>
+      <td align="center"><a href="/adm_addvegpic/{{ i[0] }}">Add photos</a></td>
+      <td align="center"><a href="/adm_edit/{{ i[0] }}">Edit</a></td>
+      <td align="center"><a href="/delete/{{ i[0] }}">Delete</a></td>
+    </tr>
+      {% endfor %}
+
+  </table>
+
+</form>
+{% endblock %}

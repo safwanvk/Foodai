@@ -1,0 +1,75 @@
+{% extends "lkindex.html" %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/search_ing">
+  <table  class="table">
+    <tr>
+      <td height="47" colspan="3" align="right"><input type="submit" name="btn" id="btn_delete" value="Delete"  class="btn btn-primary"/>
+
+      <input type="submit" name="btn" id="btn_finish" value="Finish" class="btn btn-primary"/>
+
+
+      </td>
+    </tr>
+
+    <tr>
+      <td width="312" rowspan="3">
+
+        <table  class="table">
+        <tr>
+          <td  colspan="2" ><img src="{{ image }}" width="200" height="200" /></td>
+          </tr>
+        <tr>
+          <td >Name</td>
+          <td width="201">{{ name }}</td>
+          </tr>
+        <tr>
+          <td>Description</td>
+          <td>{{ description }}</td>
+          </tr>
+        <tr>
+          <td >How to make</td>
+          <td>{{ howto }}</td>
+          </tr>
+      </table></td>
+      <td height="275" colspan="2"><table class="table">
+        <tr>
+          <th width="71" >Veg_ID</th>
+          <th width="75" align="center">NAME</th>
+          <th width="204">&nbsp;</th>
+        </tr>
+          {% for i in data %}
+        <tr>
+          <td>{{ loop.index  }}</td>
+          <td>{{ i[1] }}</td>
+          <td align="center"><a href="/added_items/{{ i[0] }}">Add</a></td>
+        </tr>
+          {% endfor %}
+      </table></td>
+    </tr>
+    <tr>
+      <td height="44" colspan="2" ><label style="color : red "> <h3>ADDED ITEMS</h3></label></td>
+    </tr>
+    <tr>
+      <td height="208" colspan="2">
+
+
+        <table class="table">
+        <tr>
+          <th width="179" align="center">VEG NAME</th>
+          <td width="160">&nbsp;</td>
+        </tr>
+          {% for k in i %}
+        <tr>
+            <td>{{ k[3] }}</td>
+            <td align="center"><a href="/reciveg_delete/{{ k[2] }}">Delete</a></td>
+        </tr>
+          {% endfor %}
+      </table>
+    </tr>
+    <tr>
+      <td height="48" colspan="3" align="right"></td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

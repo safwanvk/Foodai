@@ -1,0 +1,68 @@
+{% extends "lkindex.html" %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/adm_viewcomplaint">
+<h2>Pending Stores</h2>
+  <table  class="table table-bordered">
+    <tr>
+      <th  align="center">#</th>
+      <th width="153" align="center">NAME</th>
+      <th width="198" align="center">Latitude</th>
+      <th width="188" align="center">Longitude</th>
+      <th width="188" align="center">Post</th>
+      <th width="188" align="center">Pin</th>
+      <th width="188" align="center">Email</th>
+      <th width="188" align="center">Phone</th>
+
+      <th width="50"></th>
+      <th width="50">&nbsp;</th>
+    </tr>
+      {% for i in respend %}
+    <tr>
+      <td width="40px">&nbsp;{{ loop.index }}</td>
+      <td>{{ i[1] }}</td>
+      <td>{{ i[2]}}</td>
+      <td>{{ i[3]}}</td>
+      <td>{{ i[4]}}</td>
+      <td>{{ i[5]}}</td>
+      <td>{{ i[6]}}</td>
+      <td>{{ i[7]}}</td>
+
+      <td width="50px"><a href="/approvestore/{{ i[0] }}" class="btn btn-success" onclick="return confirm('Are you sure?')">Approve</a></td>
+      <td width="50px"><a href="/rejstore/{{ i[0] }}" class="btn btn-danger" onclick="return confirm('Are you sure?')">Reject</a></td>
+    </tr>
+      {% endfor %}
+  </table>
+<br>
+<br>
+<h2>Approved Stores</h2>
+  <table  class="table table-bordered">
+    <tr>
+      <th width="40px" align="center">#</th>
+      <th width="153" align="center">NAME</th>
+      <th width="198" align="center">Latitude</th>
+      <th width="188" align="center">Longitude</th>
+      <th width="188" align="center">Post</th>
+      <th width="188" align="center">Pin</th>
+      <th width="188" align="center">Email</th>
+      <th width="188" align="center">Phone</th>
+
+
+    </tr>
+      {% for i in resdone %}
+    <tr>
+      <td>&nbsp;{{ loop.index }}</td>
+      <td>{{ i[1] }}</td>
+      <td>{{ i[2]}}</td>
+      <td>{{ i[3]}}</td>
+      <td>{{ i[4]}}</td>
+      <td>{{ i[5]}}</td>
+      <td>{{ i[6]}}</td>
+      <td>{{ i[7]}}</td>
+
+
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+{% endblock %}

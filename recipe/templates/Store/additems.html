@@ -1,0 +1,35 @@
+{% extends "/Store/lkindex.html" %}
+{% block body %}
+
+<form action="/storeaddveg_post" method="post">
+
+
+<table class="table" >
+  <tr>
+    <td width="187">Item name</td>
+    <td ><select name="select" id="select" class="form-control">
+
+        {% for i in res %}
+
+        <option value="{{ i[0] }}">{{ i[1] }}</option>
+
+        {% endfor %}
+
+
+    </select></td>
+  </tr>
+  <tr>
+    <td>Price per kilogram</td>
+    <td><input type="text" name="textfield" id="textfield" class="form-control" required></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input type="submit" name="button" id="button" value="Submit" class="btn btn-success"></td>
+  </tr>
+</table>
+
+
+
+</form>
+
+{% endblock %}

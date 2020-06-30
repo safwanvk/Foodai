@@ -1,0 +1,36 @@
+{% extends "lkindex.html" %}
+{% block body %}
+
+ <h1 class="title">Welcome</h1>
+
+
+
+
+    <br/>
+
+    <marquee>
+    <h3 style="color: #ff0000">
+    {% if c_cnt>0 %}
+        You have {{ c_cnt }} new complaints..
+    {% endif %}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    {% if r_cnt>0 %}
+        You have {{ r_cnt }} new recipes..
+    {% endif %}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    {% if f_cnt>0 %}
+        You have {{ f_cnt }} new feedbacks..
+    {% endif %}
+    </h3>
+    </marquee>
+
+
+    <div class="intro">A vegetable detection system based on computer vision to easily identify the vegetables and their optimal recipe from the captured images and analysed to classify and recognize the recipes</div>
+    <div id="slider">
+      <div class="flexslider">
+        <ul class="slides">
+          <li><img src="/static/adm_template/style/images/art/slide1.jpg" alt="" height="380" width="700"></li>
+          <li><img src="/static/adm_template/style/images/art/slide2.jpg" alt="" height="380" width="700"></li>
+          <li><img src="/static/adm_template/style/images/art/slide3.jpg" alt="" height="380" width="700"></li>
+          <li><img src="/static/adm_template/style/images/art/slide4.jpg" alt="" height="380" width="700"></li>
+        </ul>
+      </div>
+{% endblock %}

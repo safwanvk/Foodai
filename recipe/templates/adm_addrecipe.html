@@ -1,0 +1,32 @@
+{% extends "lkindex.html" %}
+{% block body %}
+
+<form action="/adm_adrecipe_post" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table class="table">
+    <tr>
+      <td width="179">Recipe Image</td>
+      <td width="283"><label for="textfield"></label>
+      <input type="file" name="file_rimage" id="file_rimage" required/></td>
+    </tr>
+    <tr>
+      <td>Recipe Name</td>
+      <td><label for="textfield2"></label>
+      <input type="text" name="txt_rname" id="txt_rname" required/></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><label for="textarea"></label>
+      <textarea name="txta_description" id="txta_description" cols="45" rows="5" required></textarea><label for="textfield3"></label></td>
+    </tr>
+    <tr>
+      <td>How To Make</td>
+      <td><label for="textarea2"></label>
+      <textarea name="txta_make" id="txta_make" cols="45" rows="5" required></textarea></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="btn_next" id="btn_next" class="btn btn-primary" value="Next" /></td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

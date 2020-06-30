@@ -1,0 +1,20 @@
+{% extends "lkindex.html" %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/admreply_post">
+  <table class="table">
+      <tr>
+          <td>COMPLAINT:</td>
+          <td align="center">{{ com }}</td>
+      </tr>
+    <tr>
+        <td>REPLY:</td>
+      <td align="center"><input type="text" name="txt_reply" id="txt_reply" value="{{ rep }}" height="80" required/></td>
+    </tr>
+    <tr>
+        <td></td>
+      <td align="center"><input type="submit" name="btn_send" id="btn_send" value="Send" /></td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

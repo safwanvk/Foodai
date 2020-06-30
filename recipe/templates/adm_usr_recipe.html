@@ -1,0 +1,55 @@
+{% extends "lkindex.html" %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/adm_vusereci">
+
+  <h3 ><u>USER PENDING RECIPIES</u></h3>
+  <br>
+  <table class="table">
+    <tr>
+      <th width="60">#</th>
+       <th width="146" align="center">IMAGE</th>
+      <th width="144" align="center">USER NAME</th>
+      <th width="146" align="center">RECIPE</th>
+
+      <th width="87">&nbsp;</th>
+      <th width="92">&nbsp;</th>
+    </tr>
+      {% for i in recipe %}
+    <tr>
+      <td>{{ loop.index }}</td>
+       <td><img src="{{ i[2] }}" width="80" height="80"/></td>
+      <td>{{ i[0] }}</td>
+      <td align="center">{{ i[1] }}</td>
+
+      <td align="center"><a href="adm_approveureci/{{ i[3] }}">Approve</a></td>
+      <td align="center"><a href="/adm_recidetails/{{ i[3] }}">Edit</a></td>
+    </tr>
+      {% endfor %}
+  </table>
+
+  <br>
+<h3 ><u>USER APPROVED RECIPIES</u></h3>
+  <br>
+<table class="table">
+    <tr>
+      <th width="60">#</th>
+       <th width="146" align="center">IMAGE</th>
+      <th width="144" align="center">USER NAME</th>
+      <th width="146" align="center">RECIPE</th>
+
+    </tr>
+      {% for i in data1 %}
+    <tr>
+
+       <td>{{ loop.index }}</td>
+       <td><img src="{{ i[2] }}" width="80" height="80"/></td>
+
+      <td>{{ i[0] }}</td>
+        <td align="center">{{ i[1] }}</td>
+
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+{% endblock %}

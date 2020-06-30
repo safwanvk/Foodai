@@ -1,0 +1,16 @@
+{% extends "lkindex.html" %}
+{% block body %}
+
+<form action="/vegimg_upload" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table  class="table">
+    <tr>
+      <td >Choose Vegetable Photo</td>
+      <td width="180"><input type="file" name="file_photo" id="file_photo" required/></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" class="btn btn-primary" name="btn_upload" id="btn_upload" value="Upload" /></td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

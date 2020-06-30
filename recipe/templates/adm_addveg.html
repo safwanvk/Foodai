@@ -1,0 +1,20 @@
+{% extends "lkindex.html" %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/addveg_post">
+  <table class="table">
+    <tr>
+      <td width="92">Name</td>
+      <td width="150"><input type="text" name="txt_vegname" id="txt_vegname" required/></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+        <td><textarea name="txt_descrip" id="txt_descrip" cols="50" rows="5" required></textarea></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td ><input type="submit"  class="btn btn-primary" name="btn_save" id="btn_save" value="Save" /></td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

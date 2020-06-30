@@ -1,0 +1,45 @@
+{% extends "lkindex.html" %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/adm_viewcomplaint">
+<h2>Pending complaints</h2>
+  <table  class="table">
+    <tr>
+      <th width="153" align="center">S.NO</th>
+      <th width="153" align="center">NAME</th>
+      <th width="198" align="center">COMPLAINTS</th>
+      <th width="188" align="center">DATE</th>
+      <th width="188">&nbsp;</th>
+    </tr>
+      {% for i in data %}
+    <tr>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>{{ i[6] }}</td>
+      <td>{{ i[2]}}</td>
+      <td align="center">{{ i[4] }}</td>
+      <td align="center"><a href="/adm_reply/{{ i[0] }}">Reply</a></td>
+    </tr>
+      {% endfor %}
+  </table>
+<br>
+<h2>Replied complaints</h2>
+  <table class="table">
+    <tr>
+      <th width="153" align="center">S.NO</th>
+      <th width="153" align="center">NAME</th>
+      <th width="198" align="center">COMPLAINTS</th>
+      <th width="198" align="center">REPLY</th>
+      <th width="188" align="center">DATE</th>
+    </tr>
+      {% for i in data1 %}
+    <tr>
+      <td>&nbsp;{{ i[0] }}</td>
+      <td>{{ i[6] }}</td>
+      <td>{{ i[2]}}</td>
+      <td>{{ i[3] }}</td>
+      <td align="center">{{ i[4] }}</td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+{% endblock %}

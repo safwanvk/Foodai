@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="216cd092-ea0f-44e5-99df-3e86c6b8e813" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="recipe.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/recipe/recipe.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="885" column="49" lean-forward="false" selection-start-line="885" selection-start-column="49" selection-end-line="885" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+                <marker date="1581928260207" expanded="true" signature="506:591" ph="select type,... tbl_login" />
+                <marker date="1581928260207" expanded="true" signature="1640:1729" ph="insert into tbl_vegetables... " />
+                <marker date="1581928260207" expanded="true" signature="1924:1952" ph="select * fro... tbl_vegetables" />
+                <marker date="1581928260207" expanded="true" signature="2104:2154" ph="select * fro... tbl_vegetables" />
+                <marker date="1581928260207" expanded="true" signature="2442:2535" ph="update tbl_v... " />
+                <marker date="1581928260207" expanded="true" signature="2650:2698" ph="delete from " />
+                <marker date="1581928260207" expanded="true" signature="3416:3451" ph="select max(r... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="3494:3682" ph="insert into tbl_recipe... " />
+                <marker date="1581928260207" expanded="true" signature="3834:3862" ph="select * fro... tbl_vegetables" />
+                <marker date="1581928260207" expanded="true" signature="3991:4186" ph="select tbl_i... tbl_ingredients" />
+                <marker date="1581928260207" expanded="true" signature="4424:4509" ph="insert into tbl_ingredients... " />
+                <marker date="1581928260207" expanded="true" signature="4626:4655" ph="select * fro... tbl_ingredients" />
+                <marker date="1581928260207" expanded="true" signature="4825:4877" ph="delete from " />
+                <marker date="1581928260207" expanded="true" signature="5116:5177" ph="select * fro... tbl_vegetables" />
+                <marker date="1581928260207" expanded="true" signature="5345:5540" ph="select tbl_i... tbl_ingredients" />
+                <marker date="1581928260207" expanded="true" signature="5880:5946" ph="delete from " />
+                <marker date="1581928260207" expanded="true" signature="6009:6081" ph="delete from " />
+                <marker date="1581928260207" expanded="true" signature="6305:6461" ph="select tbl_c... tbl_complaint" />
+                <marker date="1581928260207" expanded="true" signature="6512:6668" ph="select tbl_c... tbl_complaint" />
+                <marker date="1581928260207" expanded="true" signature="6845:6974" ph="select tbl_f... tbl_feedback" />
+                <marker date="1581928260207" expanded="true" signature="7023:7060" ph="update tbl_f... " />
+                <marker date="1581928260207" expanded="true" signature="7202:7224" ph="select * fro... tbl_user" />
+                <marker date="1581928260207" expanded="true" signature="7494:7562" ph="select compl... tbl_complaint" />
+                <marker date="1581928260207" expanded="true" signature="7776:7878" ph="update tbl_c... " />
+                <marker date="1581928260207" expanded="true" signature="8045:8101" ph="select name tbl_vegetables" />
+                <marker date="1581928260207" expanded="true" signature="8110:8190" ph="select image... tbl_vegimage" />
+                <marker date="1581928260207" expanded="true" signature="8814:8898" ph="insert into tbl_vegimage... " />
+                <marker date="1581928260207" expanded="true" signature="9061:9109" ph="delete from " />
+                <marker date="1581928260207" expanded="true" signature="9232:9293" ph="select reci_... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="9508:9584" ph="select reci_... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="9757:9837" ph="select name,... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="10021:10049" ph="select * fro... tbl_vegetables" />
+                <marker date="1581928260207" expanded="true" signature="10105:10287" ph="select tbl_i... tbl_ingredients" />
+                <marker date="1581928260207" expanded="true" signature="10511:10693" ph="select tbl_u... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="10745:10899" ph="select tbl_u... tbl_user" />
+                <marker date="1581928260207" expanded="true" signature="11086:11148" ph="update tbl_r... " />
+                <marker date="1581928260207" expanded="true" signature="11467:11530" ph="select count... tbl_complaint" />
+                <marker date="1581928260207" expanded="true" signature="11568:11628" ph="select count... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="11667:11733" ph="select count... tbl_feedback" />
+                <marker date="1581928260207" expanded="true" signature="12130:12207" ph="select type tbl_login" />
+                <marker date="1581928260207" expanded="true" signature="12308:12358" ph="select Reg_i... tbl_user" />
+                <marker date="1581928260207" expanded="true" signature="12902:12948" ph="select * fro... tbl_user" />
+                <marker date="1581928260207" expanded="true" signature="13007:13199" ph="insert into tbl_user... " />
+                <marker date="1581928260207" expanded="true" signature="13235:13319" ph="INSERT INTO `tbl_login`... " />
+                <marker date="1581928260207" expanded="true" signature="13856:13933" ph="SELECT * FRO... tbl_login" />
+                <marker date="1581928260207" expanded="true" signature="14012:14069" ph="SELECT `Reg_... tbl_user" />
+                <marker date="1581928260207" expanded="true" signature="14470:14606" ph="INSERT INTO `tbl_complaint`... " />
+                <marker date="1581928260207" expanded="true" signature="14823:14928" ph="INSERT INTO tbl_feedback... " />
+                <marker date="1581928260207" expanded="true" signature="15063:15141" ph="SELECT `reci... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="15357:15461" ph="SELECT `reci... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="15679:15784" ph="SELECT `reci... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="16039:16168" ph="SELECT `reci... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="16380:16556" ph="SELECT name,... tbl_vegetables" />
+                <marker date="1581928260207" expanded="true" signature="16778:16867" ph="SELECT `comp... tbl_complaint" />
+                <marker date="1581928260207" expanded="true" signature="17071:17177" ph="select * fro... tbl_vegetables" />
+                <marker date="1581928260207" expanded="true" signature="17117:17175" ph="select veg_i... tbl_ingredients" />
+                <marker date="1581928260207" expanded="true" signature="17366:17457" ph="select * fro... store" />
+                <marker date="1581928260207" expanded="true" signature="17402:17456" ph="select slogi... storevegitems" />
+                <marker date="1581928260207" expanded="true" signature="18325:18349" ph="select * fro... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="18437:18607" ph="SELECT `name... tbl_vegetables" />
+                <marker date="1581928260207" expanded="true" signature="19236:19297" ph="select * fro... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="20405:20440" ph="select max(r... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="20487:20687" ph="insert into tbl_recipe... " />
+                <marker date="1581928260207" expanded="true" signature="20911:21033" ph="SELECT * FRO... tbl_vegetables" />
+                <marker date="1581928260207" expanded="true" signature="20965:21032" ph="SELECT `veg_... tbl_ingredients" />
+                <marker date="1581928260207" expanded="true" signature="21277:21400" ph="SELECT * FRO... tbl_vegetables" />
+                <marker date="1581928260207" expanded="true" signature="21328:21399" ph="SELECT `veg_... tbl_ingredients" />
+                <marker date="1581928260207" expanded="true" signature="21651:21737" ph="INSERT INTO tbl_ingredients" />
+                <marker date="1581928260207" expanded="true" signature="21874:21916" ph="select * fro... store" />
+                <marker date="1581928260207" expanded="true" signature="21959:22002" ph="select * fro... store" />
+                <marker date="1581928260207" expanded="true" signature="22214:22272" ph="update store... " />
+                <marker date="1581928260207" expanded="true" signature="22457:22515" ph="update store... " />
+                <marker date="1581928260207" expanded="true" signature="22691:22813" ph="select * fro... tbl_vegetables" />
+                <marker date="1581928260207" expanded="true" signature="22741:22812" ph="select vegid... storevegitems" />
+                <marker date="1581928260207" expanded="true" signature="23297:23342" ph="delete from " />
+                <marker date="1581928260207" expanded="true" signature="23631:23734" ph="insert into storevegitems... " />
+                <marker date="1581928260207" expanded="true" signature="23895:23953" ph="select * fro... store" />
+                <marker date="1581928260207" expanded="true" signature="24577:24659" ph="insert into tbl_login... " />
+                <marker date="1581928260207" expanded="true" signature="24695:24884" ph="insert into store... " />
+                <marker date="1581928260207" expanded="true" signature="25569:25650" ph="insert into tbl_login... " />
+                <marker date="1581928260207" expanded="true" signature="25686:25870" ph="insert into tbl_user... " />
+                <marker date="1581928260207" expanded="true" signature="26112:26173" ph="select * fro... tbl_user" />
+                <marker date="1581928260207" expanded="true" signature="26973:27008" ph="select max(r... tbl_recipe" />
+                <marker date="1581928260207" expanded="true" signature="27051:27239" ph="insert into tbl_recipe... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adm_addrecipe.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recipe/templates/adm_addrecipe.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recipe/templates/user/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lkindex.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recipe/templates/user/lkindex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/recipe/templates/adm_addrecipe.html" />
+        <option value="$PROJECT_DIR$/recipe/recipe.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1380" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipe_py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipe_py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipe_py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipe_py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipe_py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipe_py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recipe" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/recipe" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="216cd092-ea0f-44e5-99df-3e86c6b8e813" name="Default" comment="" />
+      <created>1581928060617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581928060617</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="0" width="1380" height="735" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24772727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27287066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/recipe/recipe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1581928260207" expanded="true" signature="506:591" ph="select type,... tbl_login" />
+            <marker date="1581928260207" expanded="true" signature="1640:1729" ph="insert into tbl_vegetables... " />
+            <marker date="1581928260207" expanded="true" signature="1924:1952" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="2104:2154" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="2442:2535" ph="update tbl_v... " />
+            <marker date="1581928260207" expanded="true" signature="2650:2698" ph="delete from " />
+            <marker date="1581928260207" expanded="true" signature="3416:3451" ph="select max(r... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="3494:3682" ph="insert into tbl_recipe... " />
+            <marker date="1581928260207" expanded="true" signature="3834:3862" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="3991:4186" ph="select tbl_i... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="4424:4509" ph="insert into tbl_ingredients... " />
+            <marker date="1581928260207" expanded="true" signature="4626:4655" ph="select * fro... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="4825:4877" ph="delete from " />
+            <marker date="1581928260207" expanded="true" signature="5116:5177" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="5345:5540" ph="select tbl_i... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="5880:5946" ph="delete from " />
+            <marker date="1581928260207" expanded="true" signature="6009:6081" ph="delete from " />
+            <marker date="1581928260207" expanded="true" signature="6305:6461" ph="select tbl_c... tbl_complaint" />
+            <marker date="1581928260207" expanded="true" signature="6512:6668" ph="select tbl_c... tbl_complaint" />
+            <marker date="1581928260207" expanded="true" signature="6845:6974" ph="select tbl_f... tbl_feedback" />
+            <marker date="1581928260207" expanded="true" signature="7023:7060" ph="update tbl_f... " />
+            <marker date="1581928260207" expanded="true" signature="7202:7224" ph="select * fro... tbl_user" />
+            <marker date="1581928260207" expanded="true" signature="7494:7562" ph="select compl... tbl_complaint" />
+            <marker date="1581928260207" expanded="true" signature="7776:7878" ph="update tbl_c... " />
+            <marker date="1581928260207" expanded="true" signature="8045:8101" ph="select name tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="8110:8190" ph="select image... tbl_vegimage" />
+            <marker date="1581928260207" expanded="true" signature="8814:8898" ph="insert into tbl_vegimage... " />
+            <marker date="1581928260207" expanded="true" signature="9061:9109" ph="delete from " />
+            <marker date="1581928260207" expanded="true" signature="9232:9293" ph="select reci_... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="9508:9584" ph="select reci_... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="9757:9837" ph="select name,... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="10021:10049" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="10105:10287" ph="select tbl_i... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="10511:10693" ph="select tbl_u... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="10745:10899" ph="select tbl_u... tbl_user" />
+            <marker date="1581928260207" expanded="true" signature="11086:11148" ph="update tbl_r... " />
+            <marker date="1581928260207" expanded="true" signature="11467:11530" ph="select count... tbl_complaint" />
+            <marker date="1581928260207" expanded="true" signature="11568:11628" ph="select count... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="11667:11733" ph="select count... tbl_feedback" />
+            <marker date="1581928260207" expanded="true" signature="12130:12207" ph="select type tbl_login" />
+            <marker date="1581928260207" expanded="true" signature="12308:12358" ph="select Reg_i... tbl_user" />
+            <marker date="1581928260207" expanded="true" signature="12902:12948" ph="select * fro... tbl_user" />
+            <marker date="1581928260207" expanded="true" signature="13007:13199" ph="insert into tbl_user... " />
+            <marker date="1581928260207" expanded="true" signature="13235:13319" ph="INSERT INTO `tbl_login`... " />
+            <marker date="1581928260207" expanded="true" signature="13856:13933" ph="SELECT * FRO... tbl_login" />
+            <marker date="1581928260207" expanded="true" signature="14012:14069" ph="SELECT `Reg_... tbl_user" />
+            <marker date="1581928260207" expanded="true" signature="14470:14606" ph="INSERT INTO `tbl_complaint`... " />
+            <marker date="1581928260207" expanded="true" signature="14823:14928" ph="INSERT INTO tbl_feedback... " />
+            <marker date="1581928260207" expanded="true" signature="15063:15141" ph="SELECT `reci... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="15357:15461" ph="SELECT `reci... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="15679:15784" ph="SELECT `reci... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="16039:16168" ph="SELECT `reci... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="16380:16556" ph="SELECT name,... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="16778:16867" ph="SELECT `comp... tbl_complaint" />
+            <marker date="1581928260207" expanded="true" signature="17071:17177" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="17117:17175" ph="select veg_i... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="17366:17457" ph="select * fro... store" />
+            <marker date="1581928260207" expanded="true" signature="17402:17456" ph="select slogi... storevegitems" />
+            <marker date="1581928260207" expanded="true" signature="18325:18349" ph="select * fro... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="18437:18607" ph="SELECT `name... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="19236:19297" ph="select * fro... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="20405:20440" ph="select max(r... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="20487:20687" ph="insert into tbl_recipe... " />
+            <marker date="1581928260207" expanded="true" signature="20911:21033" ph="SELECT * FRO... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="20965:21032" ph="SELECT `veg_... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="21277:21400" ph="SELECT * FRO... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="21328:21399" ph="SELECT `veg_... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="21651:21737" ph="INSERT INTO tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="21874:21916" ph="select * fro... store" />
+            <marker date="1581928260207" expanded="true" signature="21959:22002" ph="select * fro... store" />
+            <marker date="1581928260207" expanded="true" signature="22214:22272" ph="update store... " />
+            <marker date="1581928260207" expanded="true" signature="22457:22515" ph="update store... " />
+            <marker date="1581928260207" expanded="true" signature="22691:22813" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="22741:22812" ph="select vegid... storevegitems" />
+            <marker date="1581928260207" expanded="true" signature="23297:23342" ph="delete from " />
+            <marker date="1581928260207" expanded="true" signature="23631:23734" ph="insert into storevegitems... " />
+            <marker date="1581928260207" expanded="true" signature="23895:23953" ph="select * fro... store" />
+            <marker date="1581928260207" expanded="true" signature="24577:24659" ph="insert into tbl_login... " />
+            <marker date="1581928260207" expanded="true" signature="24695:24884" ph="insert into store... " />
+            <marker date="1581928260207" expanded="true" signature="25569:25650" ph="insert into tbl_login... " />
+            <marker date="1581928260207" expanded="true" signature="25686:25870" ph="insert into tbl_user... " />
+            <marker date="1581928260207" expanded="true" signature="26112:26173" ph="select * fro... tbl_user" />
+            <marker date="1581928260207" expanded="true" signature="26973:27008" ph="select max(r... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="27051:27239" ph="insert into tbl_recipe... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe/templates/adm_addrecipe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe/templates/user/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe/templates/user/lkindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe/templates/adm_addrecipe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe/templates/user/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe/templates/user/lkindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recipe/recipe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="885" column="49" lean-forward="false" selection-start-line="885" selection-start-column="49" selection-end-line="885" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1581928260207" expanded="true" signature="506:591" ph="select type,... tbl_login" />
+            <marker date="1581928260207" expanded="true" signature="1640:1729" ph="insert into tbl_vegetables... " />
+            <marker date="1581928260207" expanded="true" signature="1924:1952" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="2104:2154" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="2442:2535" ph="update tbl_v... " />
+            <marker date="1581928260207" expanded="true" signature="2650:2698" ph="delete from " />
+            <marker date="1581928260207" expanded="true" signature="3416:3451" ph="select max(r... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="3494:3682" ph="insert into tbl_recipe... " />
+            <marker date="1581928260207" expanded="true" signature="3834:3862" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="3991:4186" ph="select tbl_i... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="4424:4509" ph="insert into tbl_ingredients... " />
+            <marker date="1581928260207" expanded="true" signature="4626:4655" ph="select * fro... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="4825:4877" ph="delete from " />
+            <marker date="1581928260207" expanded="true" signature="5116:5177" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="5345:5540" ph="select tbl_i... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="5880:5946" ph="delete from " />
+            <marker date="1581928260207" expanded="true" signature="6009:6081" ph="delete from " />
+            <marker date="1581928260207" expanded="true" signature="6305:6461" ph="select tbl_c... tbl_complaint" />
+            <marker date="1581928260207" expanded="true" signature="6512:6668" ph="select tbl_c... tbl_complaint" />
+            <marker date="1581928260207" expanded="true" signature="6845:6974" ph="select tbl_f... tbl_feedback" />
+            <marker date="1581928260207" expanded="true" signature="7023:7060" ph="update tbl_f... " />
+            <marker date="1581928260207" expanded="true" signature="7202:7224" ph="select * fro... tbl_user" />
+            <marker date="1581928260207" expanded="true" signature="7494:7562" ph="select compl... tbl_complaint" />
+            <marker date="1581928260207" expanded="true" signature="7776:7878" ph="update tbl_c... " />
+            <marker date="1581928260207" expanded="true" signature="8045:8101" ph="select name tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="8110:8190" ph="select image... tbl_vegimage" />
+            <marker date="1581928260207" expanded="true" signature="8814:8898" ph="insert into tbl_vegimage... " />
+            <marker date="1581928260207" expanded="true" signature="9061:9109" ph="delete from " />
+            <marker date="1581928260207" expanded="true" signature="9232:9293" ph="select reci_... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="9508:9584" ph="select reci_... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="9757:9837" ph="select name,... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="10021:10049" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="10105:10287" ph="select tbl_i... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="10511:10693" ph="select tbl_u... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="10745:10899" ph="select tbl_u... tbl_user" />
+            <marker date="1581928260207" expanded="true" signature="11086:11148" ph="update tbl_r... " />
+            <marker date="1581928260207" expanded="true" signature="11467:11530" ph="select count... tbl_complaint" />
+            <marker date="1581928260207" expanded="true" signature="11568:11628" ph="select count... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="11667:11733" ph="select count... tbl_feedback" />
+            <marker date="1581928260207" expanded="true" signature="12130:12207" ph="select type tbl_login" />
+            <marker date="1581928260207" expanded="true" signature="12308:12358" ph="select Reg_i... tbl_user" />
+            <marker date="1581928260207" expanded="true" signature="12902:12948" ph="select * fro... tbl_user" />
+            <marker date="1581928260207" expanded="true" signature="13007:13199" ph="insert into tbl_user... " />
+            <marker date="1581928260207" expanded="true" signature="13235:13319" ph="INSERT INTO `tbl_login`... " />
+            <marker date="1581928260207" expanded="true" signature="13856:13933" ph="SELECT * FRO... tbl_login" />
+            <marker date="1581928260207" expanded="true" signature="14012:14069" ph="SELECT `Reg_... tbl_user" />
+            <marker date="1581928260207" expanded="true" signature="14470:14606" ph="INSERT INTO `tbl_complaint`... " />
+            <marker date="1581928260207" expanded="true" signature="14823:14928" ph="INSERT INTO tbl_feedback... " />
+            <marker date="1581928260207" expanded="true" signature="15063:15141" ph="SELECT `reci... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="15357:15461" ph="SELECT `reci... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="15679:15784" ph="SELECT `reci... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="16039:16168" ph="SELECT `reci... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="16380:16556" ph="SELECT name,... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="16778:16867" ph="SELECT `comp... tbl_complaint" />
+            <marker date="1581928260207" expanded="true" signature="17071:17177" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="17117:17175" ph="select veg_i... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="17366:17457" ph="select * fro... store" />
+            <marker date="1581928260207" expanded="true" signature="17402:17456" ph="select slogi... storevegitems" />
+            <marker date="1581928260207" expanded="true" signature="18325:18349" ph="select * fro... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="18437:18607" ph="SELECT `name... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="19236:19297" ph="select * fro... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="20405:20440" ph="select max(r... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="20487:20687" ph="insert into tbl_recipe... " />
+            <marker date="1581928260207" expanded="true" signature="20911:21033" ph="SELECT * FRO... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="20965:21032" ph="SELECT `veg_... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="21277:21400" ph="SELECT * FRO... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="21328:21399" ph="SELECT `veg_... tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="21651:21737" ph="INSERT INTO tbl_ingredients" />
+            <marker date="1581928260207" expanded="true" signature="21874:21916" ph="select * fro... store" />
+            <marker date="1581928260207" expanded="true" signature="21959:22002" ph="select * fro... store" />
+            <marker date="1581928260207" expanded="true" signature="22214:22272" ph="update store... " />
+            <marker date="1581928260207" expanded="true" signature="22457:22515" ph="update store... " />
+            <marker date="1581928260207" expanded="true" signature="22691:22813" ph="select * fro... tbl_vegetables" />
+            <marker date="1581928260207" expanded="true" signature="22741:22812" ph="select vegid... storevegitems" />
+            <marker date="1581928260207" expanded="true" signature="23297:23342" ph="delete from " />
+            <marker date="1581928260207" expanded="true" signature="23631:23734" ph="insert into storevegitems... " />
+            <marker date="1581928260207" expanded="true" signature="23895:23953" ph="select * fro... store" />
+            <marker date="1581928260207" expanded="true" signature="24577:24659" ph="insert into tbl_login... " />
+            <marker date="1581928260207" expanded="true" signature="24695:24884" ph="insert into store... " />
+            <marker date="1581928260207" expanded="true" signature="25569:25650" ph="insert into tbl_login... " />
+            <marker date="1581928260207" expanded="true" signature="25686:25870" ph="insert into tbl_user... " />
+            <marker date="1581928260207" expanded="true" signature="26112:26173" ph="select * fro... tbl_user" />
+            <marker date="1581928260207" expanded="true" signature="26973:27008" ph="select max(r... tbl_recipe" />
+            <marker date="1581928260207" expanded="true" signature="27051:27239" ph="insert into tbl_recipe... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

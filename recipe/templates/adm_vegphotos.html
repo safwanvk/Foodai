@@ -1,0 +1,70 @@
+{% extends "lkindex.html" %}
+{% block body %}
+
+
+<style>
+div.gallery {
+
+  margin: 5px;
+  border:4px solid #ccc;
+  float: left;
+  width: 150px;
+   border: 1px solid #777;
+}
+
+div.gallery:hover {
+  <!--border: 1px solid #777;-->
+}
+
+div.gallery img {
+  width: 100px;
+  height: 100px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+
+
+
+<form id="form1" name="form1" method="post" action="/btn_addvegpic">
+<h1>NAME:{{ vegname }}</h1>
+
+  <input type="submit" name="btn_add" id="btn_add" value="Add" align="right"/>
+
+<br>
+
+
+      {% for i in data %}
+
+
+
+  <div class="gallery" align="center">
+  <a target="_blank">
+
+       <br>
+
+    <img  src="{{ i[1] }}" width="800" height="600" >
+
+  </a>
+  <div class="desc"></div>
+
+   <center> <a href="/admveg_delete/{{ i[0] }}">Delete</a></center>
+
+    <br>
+</div>
+
+
+
+
+
+
+      {% endfor %}
+
+
+  <br>
+
+</form>
+{% endblock %}

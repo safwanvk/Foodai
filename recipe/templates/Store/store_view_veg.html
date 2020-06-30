@@ -1,0 +1,29 @@
+{% extends "/Store/lkindex.html" %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/back_btn">
+  <table class="table ">
+    <tr>
+      <th width="93" align="center">  ID</th>
+      <th width="131" align="center">NAME</th>
+      <th align="center">DESCRIPTION</th>
+        <th width="100">Price</th>
+      <th width="50">&nbsp;</th>
+
+    </tr>
+      {% for i in data %}
+    <tr>
+      <td>{{ i[0] }}</td>
+      <td>{{ i[1] }}</td>
+      <td>{{ i[2] }}&nbsp;</td>
+      <td>{{ i[6] }}&nbsp;</td>
+
+
+      <td align="center"><a href="/dels/{{ i[3] }}" onclick="confirm ('Are you sure to delete')" class="btn btn-danger">Delete</a></td>
+    </tr>
+      {% endfor %}
+
+  </table>
+
+</form>
+{% endblock %}

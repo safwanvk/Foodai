@@ -1,0 +1,41 @@
+{% extends "/user/lkindex.html" %}
+{% block body %}
+
+
+<h4>My Profile</h4>
+<br>
+<table class="table">
+  <tr>
+    <td width="176">Store name</td>
+    <td >{{ data[1] }}&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Place</td>
+    <td>{{ data[4] }}</td>
+  </tr>
+
+  <tr>
+    <td>Pin</td>
+    <td>{{ data[5] }}&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Latitude</td>
+    <td>{{ data[2] }}&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Longitude</td>
+    <td>{{ data[3] }}&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td>{{ data[6] }}&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Contact</td>
+    <td>{{ data[7] }}&nbsp;</td>
+  </tr>
+  </table>
+
+</form>
+
+{% endblock %}

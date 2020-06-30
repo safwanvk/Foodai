@@ -1,0 +1,32 @@
+{% extends "lkindex.html" %}
+{% block body %}
+
+<form id="form1" name="form1" method="post" action="/adm_viewusers">
+  <table  class="table" width="100%">
+    <tr>
+      <th align="center">USER ID</th>
+      <th align="center">NAME</th>
+      <th align="center">GENDER</th>
+      <th align="center">ADDRESS</th>
+{#      <td align="center">STREET</td>#}
+{#      <td align="center">DISTRICT</td>#}
+{#      <td align="center">PIN</td>#}
+      <th align="center">PHONE NO</th>
+      <th align="center">EMAIL ID</th>
+    </tr>
+      {% for i in data %}
+    <tr>
+      <td>{{ i[0] }}</td>
+      <td>{{ i[1] }}</td>
+      <td>{{ i[6] }}</td>
+        <td>{{ i[2] }}<br>{{ i[3] }}<br>{{ i[4] }}<br>{{ i[5] }}</td>
+
+{#      <td></td>#}
+{#      <td></td>#}
+      <td>{{ i[7] }}</td>
+      <td>{{ i[8] }}</td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+{% endblock %}
