@@ -6,6 +6,10 @@ from flask.json import jsonify
 from connection import conn
 app = Flask(__name__)
 app.secret_key="hi"
+import os
+
+UPLOAD_FOLDER = "/home/safwan/Documents/projects/python/Zabchef/recipe/static/recipe"
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/sign_temp')
 def sign_temp():
@@ -113,7 +117,8 @@ def adm_adrecipe():
     session["making"]=make
 
     date=str(datetime.datetime.now()).replace(" ","_").replace(":","_").replace("-","_")
-    rimage.save("E:\\project\\recipe_py\\recipe\\static\\recipe\\"+date+".jpg")
+    rimage.save(os.path.join(app.config['UPLOAD_FOLDER'], ""+date+".jpg"))
+    # rimage.save("E:\\project\\recipe_py\\recipe\\static\\recipe\\"+date+".jpg")
     path="/static/recipe/"+date+".jpg"
     session["image"] = path
 
