@@ -307,7 +307,7 @@ def adm_recidetails(id):
     session["making"] = r[2]
     session["image"] = r[3]
     session["rid"] = id
-    s1 = "select * from tbl_vegetables "
+    s1 = "select * from tbl_vegetables where veg_id not in (select tbl_vegetables.veg_id from tbl_ingredients inner join tbl_vegetables on tbl_ingredients.veg_id=tbl_vegetables.veg_id where tbl_ingredients.reci_id='" + id + "' )"
     obj = conn()
     v = obj.selectall(s1)
     s2 = "select tbl_ingredients.*,tbl_vegetables.name from tbl_ingredients inner join tbl_vegetables on tbl_ingredients.veg_id=tbl_vegetables.veg_id where tbl_ingredients.reci_id='" + id + "'"
@@ -853,10 +853,10 @@ def user_viewprofile():
 
 
 
-#
-# @app.route('/user_addrecipe')
-# def user_addrecipe():
-#     return render_template("user_add_recipe.html")
+
+@app.route('/user_addrecipe')
+def user_addrecipe():
+    return render_template("user_add_recipe.html")
 
 # @app.route('/user_adrecipe_post',methods=["post"])
 # def user_adrecipe_post():
