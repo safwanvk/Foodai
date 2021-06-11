@@ -9,7 +9,9 @@ app.secret_key="hi"
 import os
 
 UPLOAD_FOLDER = "/home/safwan/Documents/projects/python/Zabchef/recipe/static/recipe"
+UPLOAD_FOLDER1 = "/home/safwan/Documents/projects/python/Zabchef/recipe/static/veg_photos"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['UPLOAD_FOLDER1']= UPLOAD_FOLDER1
 
 @app.route('/sign_temp')
 def sign_temp():
@@ -274,7 +276,8 @@ def vegimg_upload():
     im=str(session["veg_id"])
     img=request.files["file_photo"]
     date = str(datetime.datetime.now()).replace(" ", "_").replace(":", "_").replace("-", "_")
-    img.save("E:\\project\\recipe_py\\recipe\\static\\veg_photos\\" + date + ".jpg")
+    # img.save("E:\\project\\recipe_py\\recipe\\static\\veg_photos\\" + date + ".jpg")
+    img.save(os.path.join(app.config['UPLOAD_FOLDER1'], ""+date+".jpg"))
     path = "/static/veg_photos/" + date + ".jpg"
     i="insert into tbl_vegimage(veg_id,path)VALUES('"+str(session["veg_id"])+"','"+path+"')"
     obj=conn()
