@@ -26,7 +26,7 @@ div.desc {
 </style>
 
 
-<form id="form1" name="form1" method="post" action="/adm_recisearch">
+<form id="form1" name="form1" method="post" action="/usr_recisearch">
 <table class="table">
   <tr>
     <td width="150"><input placeholder="Search Here" type="text" name="txt_search" id="txt_search" required/></td>
@@ -42,18 +42,18 @@ div.desc {
     {% for i in data %}
 
 
-  <div class="gallery">
-        <center>
-  <a target="_blank">
+<div class="gallery">
+    <center>
+        <a target="_blank">
 
-       <br>
+        <br>
 
-      <img  src="{{ i[2] }}"  width="600" height="400"></a>
+        <img  src="{{ i[2] }}"  width="600" height="400"></a>
 
-  <div class="desc"><label style="color : black ; "> {{ i[1] }}</label></div>
+        <div class="desc"><label style="color : black ; "> {{ i[1] }}</label></div>
 
-   <center> <a href="/usr_recidetails/{{ i[0] }}">More Info</a></center>
-  </center>
+        <center> <a href="/usr_recidetails/{{ i[0] }}">More Info</a></center>
+    </center>
 
     <br>
 </div>

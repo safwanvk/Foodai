@@ -56,6 +56,10 @@ def adm_home():
 def st_home():
     return render_template('/Store/home.html')
 
+@app.route('/usr_home')
+def usr_home():
+    return render_template('/user/home.html')
+
 @app.route('/adm_addveg')
 def addveg():
     return render_template("adm_addveg.html")
@@ -959,6 +963,48 @@ def usr_reciveg_dele(id):
     obj=conn()
     obj.nonreturn(d)
     return user_ingredients()
+
+@app.route('/usr_search_ing',methods=["post"])
+def usr_search_ing():
+    b=request.form["btn"]
+    if b=="Search":
+        ing_name=request.form["txt_search"]
+        s="select * from tbl_vegetables where name LIKE '%"+ing_name+"%' "
+        obj=conn()
+        v=obj.selectall(s)
+        i=session["image"]
+        n= session["name"]
+        d= session["des"]
+        m=session["making"]
+
+        s="select tbl_ingredients.*,tbl_vegetables.name from tbl_ingredients inner join tbl_vegetables on tbl_ingredients.veg_id=tbl_vegetables.veg_id where tbl_ingredients.reci_id='"+str(session['rid'])+"'"
+        obj = conn()
+        ing= obj.selectall(s)
+        print(s)
+        print(ing)
+
+        return render_template("/user/user_recipedetails.html",data=v,image=i,name=n,description=d,howto=m,i=ing)
+    elif b=="Finish":
+        return "<script>alert('completed');window.location='/user/usr_recipies'</script>"
+    elif b=="Delete":
+        d1 = "delete from tbl_recipe where reci_id='" + str(session['rid']) + "'"
+        obj = conn()
+        obj.nonreturn(d1)
+        d2 = "delete from tbl_ingredients where reci_id ='" + str(session['rid']) + "'"
+        obj = conn()
+        obj.nonreturn(d2)
+        return "<script>alert('Deleted');window.location='/user/usr_recipies'</script>"
+    else:
+        return "no"
+    
+@app.route('/usr_recisearch',methods=["post"])
+def usr_recisearch():
+    search=request.form["txt_search"]
+    uid=session['id']
+    s = "select reci_id,name,photo from tbl_recipe where name LIKE '%" + search + "%' and author_id = '"+ str(uid)+"'"
+    obj = conn()
+    val = obj.selectall(s)
+    return render_template("/user/usr_recipies.html", data=val)
 
 
 
