@@ -6,6 +6,10 @@ from flask.json import jsonify
 from connection import conn
 app = Flask(__name__)
 app.secret_key="hi"
+import os
+
+UPLOAD_FOLDER = "/home/safwan/Documents/projects/python/Zabchef/recipe/static/recipe"
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/sign_temp')
 def sign_temp():
@@ -113,7 +117,8 @@ def adm_adrecipe():
     session["making"]=make
 
     date=str(datetime.datetime.now()).replace(" ","_").replace(":","_").replace("-","_")
-    rimage.save("E:\\project\\recipe_py\\recipe\\static\\recipe\\"+date+".jpg")
+    rimage.save(os.path.join(app.config['UPLOAD_FOLDER'], ""+date+".jpg"))
+    # rimage.save("E:\\project\\recipe_py\\recipe\\static\\recipe\\"+date+".jpg")
     path="/static/recipe/"+date+".jpg"
     session["image"] = path
 
@@ -307,7 +312,7 @@ def adm_recidetails(id):
     session["making"] = r[2]
     session["image"] = r[3]
     session["rid"] = id
-    s1 = "select * from tbl_vegetables "
+    s1 = "select * from tbl_vegetables where veg_id not in (select tbl_vegetables.veg_id from tbl_ingredients inner join tbl_vegetables on tbl_ingredients.veg_id=tbl_vegetables.veg_id where tbl_ingredients.reci_id='" + id + "' )"
     obj = conn()
     v = obj.selectall(s1)
     s2 = "select tbl_ingredients.*,tbl_vegetables.name from tbl_ingredients inner join tbl_vegetables on tbl_ingredients.veg_id=tbl_vegetables.veg_id where tbl_ingredients.reci_id='" + id + "'"
@@ -853,10 +858,10 @@ def user_viewprofile():
 
 
 
-#
-# @app.route('/user_addrecipe')
-# def user_addrecipe():
-#     return render_template("user_add_recipe.html")
+
+@app.route('/user_addrecipe')
+def user_addrecipe():
+    return render_template("user_add_recipe.html")
 
 # @app.route('/user_adrecipe_post',methods=["post"])
 # def user_adrecipe_post():
