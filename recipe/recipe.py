@@ -39,6 +39,9 @@ def adm_login():
         elif type=="user":
             session["log_id"]=t[1]
             session["emid"]=name
+            ary="SELECT `Reg_id` FROM `tbl_user` WHERE `email`='"+name+"'"
+            res1=obj.selectone(ary)
+            session['id']=res1[0]
             return redirect('/user_viewprofile')
         else:
             return "<script>alert('invalid user name and password');window.location='/'</script>"
@@ -136,7 +139,7 @@ def adm_adrecipe():
 @app.route('/adm_reci_ingredients')
 def ingredients():
     obj = conn()
-    s = "select * from tbl_vegetables "
+    s = "select * from tbl_vegetables where veg_id not in (select tbl_vegetables.veg_id from tbl_ingredients inner join tbl_vegetables on tbl_ingredients.veg_id=tbl_vegetables.veg_id where tbl_ingredients.reci_id='" + str(session['rid']) + "' )"
     v = obj.selectall(s)
 
     i=session["image"]
@@ -864,38 +867,101 @@ def user_viewprofile():
 
 @app.route('/user_addrecipe')
 def user_addrecipe():
-    return render_template("user_add_recipe.html")
+    return render_template("/user/user_add_recipe.html")
 
-# @app.route('/user_adrecipe_post',methods=["post"])
-# def user_adrecipe_post():
-#     rimage = request.files["file_rimage"]
-#
-#     rname = request.form["txt_rname"]
-#     session["name"]=rname
-#
-#     descript=request.form["txta_description"]
-#     session["des"]=descript
-#
-#     make=request.form["txta_make"]
-#     session["making"]=make
-#
-#     date=str(datetime.datetime.now()).replace(" ","_").replace(":","_").replace("-","_")
-#     rimage.save("E:\\project\\recipe_py\\recipe\\static\\recipe\\"+date+".jpg")
-#     path="/static/recipe/"+date+".jpg"
-#     session["image"] = path
-#
-#     j="select max(reci_id) from tbl_recipe"
-#     obj = conn()
-#     r=obj.mid(j)
-#     i="insert into tbl_recipe(reci_id,name,description,how_to_make,type,author_id,photo,status)values('"+str(r)+"','" + rname + "','" + descript + "','"+make+"','admin','0','"+path+"','approved')"
-#     obj.nonreturn(i)
-#     session['rid']=r
-#
-#     return
+@app.route('/user_adrecipe_post',methods=["post"])
+def user_adrecipe_post():
+    uid=session['id']
+    rimage = request.files["file_rimage"]
 
+    rname = request.form["txt_rname"]
+    session["name"]=rname
+
+    descript=request.form["txta_description"]
+    session["des"]=descript
+
+    make=request.form["txta_make"]
+    session["making"]=make
+
+    date=str(datetime.datetime.now()).replace(" ","_").replace(":","_").replace("-","_")
+    rimage.save(os.path.join(app.config['UPLOAD_FOLDER'], ""+date+".jpg"))
+    # rimage.save("E:\\project\\recipe_py\\recipe\\static\\recipe\\"+date+".jpg")
+    path="/static/recipe/"+date+".jpg"
+    session["image"] = path
+
+    j="select max(reci_id) from tbl_recipe"
+    obj = conn()
+    r=obj.mid(j)
+    
+
+    i="insert into tbl_recipe(reci_id,name,description,how_to_make,type,author_id,photo,status)values('"+str(r)+"','" + rname + "','" + descript + "','"+make+"','user','"+str(uid)+"','" +path+ "','pending')"
+    obj.nonreturn(i)
+    session['rid']=r
+
+    return user_ingredients()
+
+@app.route('/user_reci_ingredients')
+def user_ingredients():
+    obj = conn()
+    s = "select * from tbl_vegetables where veg_id not in (select tbl_vegetables.veg_id from tbl_ingredients inner join tbl_vegetables on tbl_ingredients.veg_id=tbl_vegetables.veg_id where tbl_ingredients.reci_id='" + str(session['rid']) + "' )"
+    v = obj.selectall(s)
+
+    i=session["image"]
+    n= session["name"]
+    d= session["des"]
+    m=session["making"]
+    
+    s="select tbl_ingredients.*,tbl_vegetables.name from tbl_ingredients inner join tbl_vegetables on tbl_ingredients.veg_id=tbl_vegetables.veg_id where tbl_ingredients.reci_id='"+str(session['rid'])+"'"
+    obj = conn()
+    ing= obj.selectall(s)
+    print(s)
+    print(ing)
+
+    return render_template("/user/user_recipedetails.html",data=v,image=i,name=n,description=d,howto=m,i=ing)
+
+@app.route('/usr_recipies')
+def usr_recipies():
+    uid=session['id']
+    s="select reci_id,name,photo from tbl_recipe where author_id='"+str(uid)+"'"
+    obj=conn()
+    val=obj.selectall(s)
+    return render_template("/user/usr_recipies.html",data=val)
+
+@app.route('/usr_recidetails/<id>')
+def usr_recidetails(id):
+    s="select name,description,how_to_make,photo from tbl_recipe where reci_id='"+id+"'"
+    obj=conn()
+    r=obj.selectone(s)
+    session["name"] = r[0]
+    session["des"] = r[1]
+    session["making"] = r[2]
+    session["image"] = r[3]
+    session["rid"] = id
+    s1 = "select * from tbl_vegetables where veg_id not in (select tbl_vegetables.veg_id from tbl_ingredients inner join tbl_vegetables on tbl_ingredients.veg_id=tbl_vegetables.veg_id where tbl_ingredients.reci_id='" + id + "' )"
+    obj = conn()
+    v = obj.selectall(s1)
+    s2 = "select tbl_ingredients.*,tbl_vegetables.name from tbl_ingredients inner join tbl_vegetables on tbl_ingredients.veg_id=tbl_vegetables.veg_id where tbl_ingredients.reci_id='" + id + "'"
+    obj = conn()
+    ing = obj.selectall(s2)
+    return render_template("/user/user_recipedetails.html", data=v, image=r[3], name=r[0], description=r[1], howto=r[2], i=ing)
+
+@app.route('/usr_added_items/<id>')
+def usr_add_items(id):
+    i="insert into tbl_ingredients(reci_id,veg_id)values('"+str(session['rid'])+"','"+id+"')"
+    obj=conn()
+    obj.nonreturn(i)
+    return user_ingredients()
+
+@app.route('/usr_reciveg_delete/<id>')
+def usr_reciveg_dele(id):
+    d="delete from tbl_ingredients WHERE serial_no='"+id+"'"
+    print(d)
+    obj=conn()
+    obj.nonreturn(d)
+    return user_ingredients()
 
 
 
 
 if __name__ == '__main__':
-    app.run(debug=True,host="0.0.0.0",port=5000)
+    app.run(debug=True,host="0.0.0.0",port=5001)

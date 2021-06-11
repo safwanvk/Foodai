@@ -1,0 +1,73 @@
+{% extends "user/lkindex.html" %}
+{% block body %}
+
+<style>
+div.gallery {
+
+  margin: 5px;
+  border:4px solid #ccc;
+  float: left;
+  width: 150px;
+   border: 1px solid #777;
+}
+
+div.gallery:hover {
+  <!--border: 1px solid #777;-->}
+
+div.gallery img {
+  width: 100px;
+  height: 100px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+
+
+<form id="form1" name="form1" method="post" action="/adm_recisearch">
+<table class="table">
+  <tr>
+    <td width="150"><input placeholder="Search Here" type="text" name="txt_search" id="txt_search" required/></td>
+    <td width="100" ><input type="submit" name="btn_search" id="btn_search" value="Search" class="btn btn-primary" /></td>
+      <td>
+
+      </td>
+      <td></td>
+  </tr>
+</table>
+
+
+    {% for i in data %}
+
+
+  <div class="gallery">
+        <center>
+  <a target="_blank">
+
+       <br>
+
+      <img  src="{{ i[2] }}"  width="600" height="400"></a>
+
+  <div class="desc"><label style="color : black ; "> {{ i[1] }}</label></div>
+
+   <center> <a href="/usr_recidetails/{{ i[0] }}">More Info</a></center>
+  </center>
+
+    <br>
+</div>
+
+
+
+
+  <!--<tr>-->
+    <!--<td height="80" colspan="2" align="center"><img src="{{ i[2] }}" width="150" height="150"/></td>-->
+    <!--</tr>-->
+  <!--<tr>-->
+    <!--<td height="29" colspan="2" align="center"></td>-->
+    <!--</tr>-->
+    {% endfor %}
+<!--</table>-->
+</form>
+{% endblock %}
