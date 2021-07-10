@@ -4,7 +4,7 @@ from flask import jsonify
 class conn:
 
     def __init__(self):
-        self.con = pymysql.connect(host="localhost", user="root", password="1234", db="recipe", port=3306)
+        self.con = pymysql.connect(host="localhost", user="root", password="password", db="recipe", port=3306)
         self.cu = self.con.cursor()
 
 
